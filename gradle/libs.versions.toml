@@ -1,0 +1,48 @@
+# DO NOT PUT ALL OF THE PLUGINS IN HERE. THAT WILL MAKE EVERYTHING A COMPLETE NIGHTMARE.
+# ONLY PUT DEPENDENCIES IN HERE, SO IMPLEMENTING DEPENENDIES AREN'T A PAIN IN THE ASS.
+
+[versions]
+kotlin = "1.7.22"
+coroutines = "1.6.4"
+serialization = "1.4.1"
+atomicfu = "0.18.5"
+ktor = "2.2.1"
+microutils = "3.0.4"
+
+[libraries]
+# Ktor stuff
+ktor-client-json = { module = "io.ktor:ktor-client-json", version.ref = "ktor"}
+ktor-client-cio-jvm = { module = "io.ktor:ktor-client-cio-jvm", version.ref = "ktor" }
+ktor-client-core-jvm = { module = "io.ktor:ktor-client-core-jvm", version.ref = "ktor" }
+ktor-server-core-jvm = { module = "io.ktor:ktor-server-core-jvm", version.ref = "ktor" }
+ktor-client-websockets = { module = "io.ktor:ktor-client-websockets", version.ref = "ktor" }
+ktor-client-content-negotiation-jvm = { module = "io.ktor:ktor-client-content-negotiation-jvm", version.ref = "ktor" }
+
+# Kotlin libs
+kotlin-stdlib = { module = "org.jetbrains.kotlin:kotlin-stdlib", version.ref = "kotlin" }
+kotlin-reflect = { module = "org.jetbrains.kotlin:kotlin-reflect", version.ref = "kotlin"}
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutines"}
+kotlinx-coroutines-core-jvm = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm", version.ref = "coroutines"}
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "serialization" }
+atomicfu = { module = "org.jetbrains.kotlinx:atomicfu", version.ref = "atomicfu" }
+
+# Loggers
+kotlin-logging-jvm = { module = "io.github.microutils:kotlin-logging-jvm", version.ref = "microutils" }
+
+[bundles]
+ktor = [
+    "ktor-client-json",
+    "ktor-client-cio-jvm",
+    "ktor-client-core-jvm",
+    "ktor-server-core-jvm",
+    "ktor-client-websockets",
+    "ktor-client-content-negotiation-jvm"
+]
+kotlin = [
+    "kotlin-stdlib",
+    "kotlin-reflect",
+    "kotlinx-coroutines-core",
+    "kotlinx-coroutines-core-jvm",
+    "kotlinx-serialization-json",
+    "atomicfu"
+]

@@ -1,2 +1,2 @@
 # KSakura
-Kotlin UI for Sakura UI
+A Compose desktop library that need the modernity and feel of 
