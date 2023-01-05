@@ -7,7 +7,7 @@ import androidx.compose.ui.Modifier
 fun Checkbox(
     onClick: () -> Unit,
     modifier: Modifier = Modifier,
-
+    disabled: Boolean = false
 ) {
 
 }
