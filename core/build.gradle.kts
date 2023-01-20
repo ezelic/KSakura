@@ -8,6 +8,8 @@ plugins {
     `maven-publish`
 }
 
+description = "Core components of Sakura for Compose.w"
+
 SakuraPublishing()
 
 dependencies {

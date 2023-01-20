@@ -12,5 +12,6 @@ pluginManagement {
 rootProject.name = "Sakura"
 
 include(
-    ":core"
+    ":core",
+    ":test"
 )

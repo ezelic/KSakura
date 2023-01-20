@@ -1,8 +1,9 @@
 package live.shuuyu.sakura.components
 
-import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Shape
 
 /**
  * Creates an interactable button, wh
@@ -11,10 +12,18 @@ import androidx.compose.ui.Modifier
 fun Button(
     onClick: () -> Unit,
     modifier: Modifier = Modifier,
-    disabled: Boolean = false
+    shape: Shape = CircleShape,
+    disabled: Boolean = true
 ) {
-    Box(
-        modifier
-            .then(modifier)
-    )
+
+}
+
+@Composable
+fun OutlineButton(
+    onClick: () -> Unit,
+    modifier: Modifier = Modifier,
+    shape: Shape,
+    enabled: Boolean = true
+) {
+
 }

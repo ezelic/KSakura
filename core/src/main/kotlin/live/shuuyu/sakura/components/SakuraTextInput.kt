@@ -2,15 +2,16 @@ package live.shuuyu.sakura.components
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 
 /**
- * Creates a checkbox which the user
+ * Creates a text input, which can relay information to another function.
  */
 @Composable
-fun Checkbox(
-    onClick: () -> Unit,
+fun TextInput(
     modifier: Modifier = Modifier,
-    enabled: Boolean = true
+    color: Color,
+    disabled: Boolean = false
 ) {
 
 }
