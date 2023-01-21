@@ -1,4 +1,4 @@
-package live.shuuyu.sakura.components
+package live.shuuyu.sakura.core.components
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.gestures.Orientation
@@ -15,6 +15,9 @@ import androidx.compose.ui.unit.*
  * @param color Changes the color of the divider.
  * @param thickness Modifies the thickness of the divider
  * @param orientation Changes the orientation of the divider, either to Horizontal or vertical.
+ *
+ * @since 0.0.1
+ * @author yujin
  */
 @Composable
 fun Divider(

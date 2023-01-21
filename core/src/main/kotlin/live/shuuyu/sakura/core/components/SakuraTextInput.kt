@@ -1,4 +1,4 @@
-package live.shuuyu.sakura.components
+package live.shuuyu.sakura.core.components
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -11,7 +11,8 @@ import androidx.compose.ui.graphics.Color
 fun TextInput(
     modifier: Modifier = Modifier,
     color: Color,
-    disabled: Boolean = false
+    enabled: Boolean = true
 ) {
 
 }
+

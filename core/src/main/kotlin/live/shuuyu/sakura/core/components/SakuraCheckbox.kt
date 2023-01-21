@@ -1,4 +1,4 @@
-package live.shuuyu.sakura.components
+package live.shuuyu.sakura.core.components
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier

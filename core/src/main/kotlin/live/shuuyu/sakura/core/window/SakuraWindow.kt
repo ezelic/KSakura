@@ -1,4 +1,4 @@
-package live.shuuyu.sakura.window
+package live.shuuyu.sakura.core.window
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.painter.Painter

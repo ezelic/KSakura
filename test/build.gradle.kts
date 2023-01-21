@@ -3,3 +3,6 @@ plugins {
     id("org.jetbrains.compose")
 }
 
+dependencies {
+    implementation(project(":core"))
+}
