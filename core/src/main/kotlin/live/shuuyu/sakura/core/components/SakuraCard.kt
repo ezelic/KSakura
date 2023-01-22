@@ -1,7 +1,9 @@
 package live.shuuyu.sakura.core.components
 
+import androidx.compose.foundation.layout.Box
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.focus.focusOrder
 
 /**
  * Makes a card, which can be interactable if specified under the onClick parameter.
@@ -16,7 +18,9 @@ fun Card(
     modifier: Modifier = Modifier,
     type: CardType = CardType.Normal
 ) {
+    Box() {
 
+    }
 }
 
 enum class CardType {
